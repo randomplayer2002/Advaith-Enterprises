@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.jpg" type="image/x-icon">
+  <title>Advaith Enterprises - Login & Signup</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Additional CSS for transition -->
+  <style>
+    .form-container {
+      position: relative;
+      width: 100%;
+      height: 500px; /* Adjust based on your layout */
+      overflow: hidden;
+      align-items: center;
+    }
+
+    .form-box {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      box-sizing: border-box;
+      transition: transform 0.6s ease;
+    }
+
+    .login-box {
+      transform: translateX(0);
+    }
+
+    .signup-box {
+      transform: translateX(100%);
+    }
+
+    .form-container.sign-up-mode .login-box {
+      transform: translateX(-100%);
+    }
+
+    .form-container.sign-up-mode .signup-box {
+      transform: translateX(0);
+    }
+
+    .toggle-btns {
+      text-align: center;
+      padding-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .toggle-btns a {
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #069bae;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .toggle-btns a.active {
+      color: #02656c;
+    }
+
+    .toggle-btns a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: #069bae;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .toggle-btns a.active::after {
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid header_top_container">
+
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Location</span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Call : +91 8050988683</span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>advaithenterprises01@gmail.com</span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand " href="index.html"> Advaith Enterprises </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html"> Products </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="login.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Login/Signup</span>
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- login/signup section -->
+  <section class="contact_section">
+    <div class="container">
+      <div class="toggle-btns">
+        <a href="#" id="login-btn" class="active" onclick="toggleForm('login')">Login</a>
+        <a href="#" id="signup-btn" onclick="toggleForm('signup')">Signup</a>
+      </div>
+      <div class="form-container" id="form-container">
+        <div class="form-box login-box">
+          <div class="heading_container heading_center">
+            <h2>Login</h2>
+          </div>
+          <form action="dashboard.html" method="POST">
+            <div class="form-row">
+              <div class="form-group col">
+                <input type="email" class="form-control" placeholder="Email" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <input type="password" class="form-control" placeholder="Password" required />
+              </div>
+            </div>
+            <div class="btn_box">
+              <button type="submit" style="
+                display: block;
+                width: 150px; /* Adjust width as needed */
+                margin: 20px auto; /* Center the button horizontally */
+                background-color: #069bae; /* Blue background color */
+                color: white; /* White text color */
+                border: none; /* Remove border */
+                padding: 10px 20px; /* Adjust padding */
+                border-radius: 5px; /* Rounded corners */
+                font-size: 16px; /* Font size */
+                cursor: pointer; /* Pointer cursor on hover */
+                transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+              ">
+                LOGIN
+              </button>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <a href="forgotPassword.html" class="forgot_link">Forgot Password?</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="form-box signup-box">
+          <div class="heading_container heading_center">
+            <h2>Signup</h2>
+          </div>
+          <form action="dashboard.html" method="POST">
+            <div class="form-row">
+              <div class="form-group col">
+                <input type="text" class="form-control" placeholder="Full Name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <input type="email" class="form-control" placeholder="Email" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <input type="password" class="form-control" placeholder="Password" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <input type="password" class="form-control" placeholder="Confirm Password" required />
+              </div>
+            </div>
+            <div class="btn_box">
+              <button type="submit" style="
+                display: block;
+                width: 150px; /* Adjust width as needed */
+                margin: 20px auto; /* Center the button horizontally */
+                background-color: #069bae; /* Blue background color */
+                color: white; /* White text color */
+                border: none; /* Remove border */
+                padding: 10px 20px; /* Adjust padding */
+                border-radius: 5px; /* Rounded corners */
+                font-size: 16px; /* Font size */
+                cursor: pointer; /* Pointer cursor on hover */
+                transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+              ">
+                SIGNUP
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end login/signup section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="info_top">
+        <div class="row">
+          <div class="col-md-3 ">
+            <a class="navbar-brand" href="index.html">Advaith Enterprises</a>
+          </div>
+          <div class="col-md-5 ">
+            <div class="info_contact">
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+91 8050988683</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info_bottom">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="info_detail">
+              <h5>Company</h5>
+              <p>Advaith Enterprises is a specialized provider of automation solutions, offering a wide range of products including VFDs, PLCs, HMIs, AC Servo Systems, and control panels.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="info_detail">
+              <h5>Services</h5>
+              <p>We provide integrated automation solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By 
+        <a href="#">Advaith Enterprises</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+  <!-- JavaScript for Toggle Form -->
+  <script>
+    function toggleForm(form) {
+      var container = document.getElementById('form-container');
+      if (form === 'login') {
+        container.classList.remove('sign-up-mode');
+        document.getElementById('login-btn').classList.add('active');
+        document.getElementById('signup-btn').classList.remove('active');
+      } else {
+        container.classList.add('sign-up-mode');
+        document.getElementById('signup-btn').classList.add('active');
+        document.getElementById('login-btn').classList.remove('active');
+      }
+    }
+  </script>
+</body>
+
+</html>
