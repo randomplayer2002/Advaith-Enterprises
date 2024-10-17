@@ -48,7 +48,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #359dec;
+  color: #2596be;
 }
 
 .heading_container.heading_center {
@@ -165,7 +165,7 @@ a:focus {
 
 .header_section .header_top .contact_nav a i {
   margin-right: 5px;
-  background-color: #359dec;
+  background-color: #2596be;
   width: 35px;
   height: 35px;
   display: -webkit-box;
@@ -182,7 +182,7 @@ a:focus {
 }
 
 .header_section .header_top .contact_nav a:hover i {
-  background-color: #359dec;
+  background-color: #2596be;
 }
 
 .header_section .header_top .social_box {
@@ -197,7 +197,7 @@ a:focus {
 
 .header_section .header_top .social_box a i {
   margin-right: 5px;
-  background-color: #359dec;
+  background-color: #2596be;
   width: 28px;
   height: 28px;
   display: -webkit-box;
@@ -214,7 +214,7 @@ a:focus {
 }
 
 .header_section .header_top .social_box a:hover i {
-  background-color: #359dec;
+  background-color: #2596be;
 }
 
 .header_section .header_bottom {
@@ -233,11 +233,11 @@ a:focus {
 }
 
 .navbar-brand span {
-  color: #359dec;
+  color: #2596be;
 }
 
 .navbar-brand:hover {
-  color: #359dec;
+  color: #2596be;
 }
 
 .custom_nav-container {
@@ -264,7 +264,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  color: #359dec;
+  color: #2596be;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -276,7 +276,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #359dec;
+  color: #2596be;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -419,17 +419,17 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #359dec;
+  background-color: #2596be;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #359dec;
+  border: 1px solid #2596be;
 }
 
 .slider_section .detail-box .btn-box .btn1:hover {
   background-color: transparent;
-  color: #359dec;
+  color: #2596be;
 }
 
 .slider_section .img-box img {
@@ -454,7 +454,7 @@ a:focus {
   height: 50px;
   background-color: #ffffff;
   opacity: 1;
-  color: #004445;
+  color: #2596be;
   font-size: 14px;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
@@ -463,7 +463,7 @@ a:focus {
 }
 
 .slider_section .carousel_btn-box a:hover {
-  background-color: #359dec;
+  background-color: #2596be;
   color: #ffffff;
 }
 
@@ -545,17 +545,17 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #359dec;
+  background-color: #2596be;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #359dec;
+  border: 1px solid #2596be;
 }
 
 .service_section .btn-box a:hover {
   background-color: transparent;
-  color: #359dec;
+  color: #2596be;
 }
 
 .service_section .owl-stage .owl-item.active {
@@ -571,7 +571,7 @@ a:focus {
 }
 
 .service_section .owl-stage .owl-item.active.center .box {
-  background-color: #004445;
+  background-color: #2596be;
   color: #ffffff;
 }
 
@@ -606,7 +606,7 @@ a:focus {
 }
 
 .service_section .owl-dots .owl-dot.active {
-  background: #359dec;
+  background: #2596be;
 }
 
 .about_section .row {
@@ -633,18 +633,18 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #359dec;
+  background-color: #2596be;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #359dec;
+  border: 1px solid #2596be;
   margin-top: 15px;
 }
 
 .about_section .detail-box a:hover {
   background-color: transparent;
-  color: #359dec;
+  color: #2596be;
 }
 
 .team_section .box {
@@ -655,7 +655,7 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #004445;
+  background-color: #2596be;
   border-radius: 10px;
   overflow: hidden;
   margin-top: 45px;
@@ -689,17 +689,17 @@ a:focus {
 .team_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #359dec;
+  background-color: #2596be;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #359dec;
+  border: 1px solid #2596be;
 }
 
 .team_section .btn-box a:hover {
   background-color: transparent;
-  color: #359dec;
+  color: #2596be;
 }
 
 .contact_section {
@@ -764,18 +764,18 @@ a:focus {
   border: none;
   display: inline-block;
   padding: 12px 55px;
-  background-color: #359dec;
+  background-color: #2596be;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #359dec;
+  border: 1px solid #2596be;
   width: 100%;
 }
 
 .contact_section .form_container .btn_box button:hover {
   background-color: transparent;
-  color: #359dec;
+  color: #2596be;
 }
 
 .contact_section .img-box {
@@ -973,17 +973,17 @@ a:focus {
 .info_section .info_form button {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #359dec;
+  background-color: #2596be;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #359dec;
+  border: 1px solid #2596be;
 }
 
 .info_section .info_form button:hover {
   background-color: transparent;
-  color: #359dec;
+  color: #2596be;
 }
 
 /* footer section*/
